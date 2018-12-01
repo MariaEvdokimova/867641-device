@@ -12,7 +12,7 @@
                 </a>
             </div>
             <div class="header-user">
-                <form class="search" action="#" method="post">
+                <form class="search" action="#" method="get">
                     <label for="id-search" class="visually-hidden">Поиск по сайту</label>
                     <input type="text" name="search" id="id-search" placeholder="Поиск по сайту">
                 </form>
@@ -46,17 +46,17 @@
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
                     <div>
-                        <a href="#">Подробнее о нас</a>
+                        <a class="more-about-us" ref="#">Подробнее о нас</a>
                     </div>	
                 </div>
                 <div class="contacts">
                     <h2>Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="https://yandex.ru/maps/213/moscow/?ll=37.529654%2C55.686980&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.529655%252C55.686981%26spn%3D0.001000%252C0.001000%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%2520%25D0%25A1%25D1%2582%25D1%2580%25D0%25BE%25D0%25B8%25D1%2582%25D0%25B5%25D0%25BB%25D0%25B5%25D0%25B9%252C%252015%2520&z=16">
-                        <img src="img/map.jpg" width="560" height="222" alt="Карта как добраться в наш офис">
+                    <a class="button" href="map.html">
+                        <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул.Строителей, 15">
                     </a>
                     <div>			
-                        <a href="">Напишите нам</a>
+                        <a class="write-to-us" href="#">Напишите нам</a>
                     </div>	
                 </div>
             </section>
@@ -81,16 +81,43 @@
                 </ul>
                 <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
             </div>
-            <div class="footer-bottom">		
+            <div class="footer-button">		
                 <ul>
                     <li><a class="social-button" href="#">Фейсбук</a></li>
                     <li><a class="social-button" href="#">Инстаграм</a></li>
                     <li><a class="social-button" href="#">Твиттер</a></li>
                 </ul>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="img/logo-html.svg" width="27" height="35" alt="интенсив «Профессиональный HTML и CSS, уровень 1»">
                 </a>
             </div>	
         </footer>
+        
+        <section class="modal modal-write-us">
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <form class="write-to-us-form" action="#" method="post">
+                <div>
+                    <label for="user-name">Ваше имя:</label>			
+                    <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                </div>
+                <div>				
+				    <label for="user-email">Ваш e-mail:</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+                </div>                
+                <div>				
+				    <label for="text-letter">Текст письма:</label>
+                    <textarea id="text-letter" rows="7" placeholder="В свободной форме"></textarea>
+                </div>                
+				<button class="button" type="submit">Отправить</button>				
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>			
+        </section>
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>			
+			    <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул.Строителей, 15">
+            </p>
+            <button class="modal-close" type="button">Закрыть</button>		
+		</section>		
     </body>
 </html>
