@@ -15,6 +15,9 @@
                 <form class="search" action="#" method="get">
                     <label for="id-search" class="visually-hidden">Поиск по сайту</label>
                     <input type="text" name="search" id="id-search" placeholder="Поиск по сайту">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
+                    </svg>
                 </form>
                 <ul class="user-navigation">
                     <li class="login-link">
@@ -31,8 +34,7 @@
             <nav class="header-navigation">
                 <ul class="catalog-navigation">
                     <li>
-                        <a href="catalog.html">Каталог товаров</a>
-                        <button class="List-product-type" type="button">Раскрытие списка катагории товаров</button>						
+                        <a class="List-product-type" href="catalog.html">Каталог товаров</a>
                         <ul>
                             <li>
                                 <a class="product-type" href="#">Виртуальная реальность</a>						
@@ -149,14 +151,16 @@
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
             <form class="write-to-us-form" action="#" method="post">
-                <div>
-                    <label for="user-name">Ваше имя:</label>			
-                    <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
-                </div>
-                <div>				
-                    <label for="user-email">Ваш e-mail:</label>
-                    <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-                </div>                
+                <div>			
+                    <div>
+                        <label for="user-name">Ваше имя:</label>			
+                        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                    </div>
+                    <div>				
+                        <label for="user-email">Ваш e-mail:</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+                    </div>
+                </div>					
                 <div>				
                     <label for="text-letter">Текст письма:</label>
                     <textarea id="text-letter" rows="7" placeholder="В свободной форме"></textarea>
