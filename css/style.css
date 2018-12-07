@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'gilroy-extrabold';
-    src: url('fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -9,12 +9,11 @@
 body {
     margin: 0;
 
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
-    font-weight: 300px;
+    font-weight: 300;
     color: #464646;
-    letter-spacing: 0.2px;
 
     background-color: #ffffff;
 }
@@ -23,19 +22,15 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
-}
-
 .button {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 18.5px;
-    letter-spacing: 3.7px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 19px;
+    letter-spacing: 4px;
     text-align: center;
     line-height: 24px;
     color: #000000;
     font-weight: 800;
-    vertical-aline: middle;
+    vertical-align: middle;
     text-transform: uppercase;
     
     background-image: linear-gradient(#ffffff 33%, #f0c52e 33%, #f0c52e 66%, #ffffff 66%);
@@ -65,34 +60,44 @@ ul {
 
 .list-product-type,
 .site-navigation {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
-    letter-spacing: 3.6px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
+.header-user ul {
+    list-style: none;
+}
+
+.header-navigation ul {
+    list-style: none;
+}
+
 .transparency-header a:hover,
-.transparency-header a:focus{
+.transparency-header a:focus {
     color: rgba(0, 0, 0, 0.6) ;
 }
 
-.transparency-header a:active{
+.transparency-header a:active {
     color: rgba(0, 0, 0, 0.3) ;
 }
 
-.transparency-logo img:hover,
-.transparency-logo img:focus {
+.transparency-header .link-exit,
+.transparency-header .link-exit:hover,
+.transparency-header .link-exit:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.transparency-logo:hover img,
+.transparency-logo:focus img {
     opacity: 0.6;
 }
 
-.transparency-logo img:active {
+.transparency-logo:active img {
     opacity: 0.3;
-}
-
-.transparency-header .exit a {
-    color: rgba(0, 0, 0, 0.3);
 }
 
 /* Изменения цвета placeholder
@@ -147,36 +152,40 @@ ul {
 }
 
 .page-title {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 47.5px;
-    letter-spacing: 0.5px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 48px;
+    letter-spacing: 1px;
     font-weight: 800;
     color: #000000;
-    line-height: 1.02;
+    line-height: 48px;
+}
+
+.breadcrumbs {
+    list-style: none;
 }
 
 .breadcrumbs,
-.breadcrumbs a{
+.breadcrumbs a {
     color: rgba(0, 0, 0, 0.3);
     line-height: 24px;
 }
 
 .breadcrumbs a:hover,
-.breadcrumbs a:focus{
+.breadcrumbs a:focus {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs a:active{
+.breadcrumbs a:active {
     color: rgba(0, 0, 0, 0.1);
 }
 
 .company-info h2 {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 47.5px;
-    letter-spacing: 0.5px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 48px;
+    letter-spacing: 1px;
     font-weight: 800;
     color: #000000;
-    line-height: 1;
+    line-height: 48px;
 }
 
 .about-us ul {
@@ -184,9 +193,9 @@ ul {
 }
 
 .company-info li {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
-    line-height: 2.5;
+    line-height: 40px;
     font-weight: 800;
     color: #000000;
 }
@@ -196,14 +205,15 @@ ul {
 }
 
 .filter legend {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     color: #000000;
 }
 
-.filter ul{
+.filter ul {
+    list-style: none;
     color: rgba(0, 0, 0, 1);
     line-height: 40px;
     font-size: 14px;
@@ -211,15 +221,19 @@ ul {
 
 .filter-input:hover,
 .filter-input:focus {
-    opacity: 0,6;
+    opacity: 0.6;
 }
 
 .filter-input:disabled + label {
     opacity: 0.25;
 }
 
+.catalog-wrapper ul {
+    list-style: none;
+}
+
 .card-products a {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
@@ -228,7 +242,7 @@ ul {
 }
 
 .card-products span {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -245,9 +259,39 @@ ul {
 .main-footer a {
     color: #ffffff;;
 }
- 
-.footer-button a {
-    opacity: 0.1;
+
+.footer-top ul {
+    list-style: none;
+}
+
+.footer-middle ul {
+    list-style: none;
+}
+
+.footer-button ul {
+    list-style: none;
+}
+
+.transparency-user-navigation a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.transparency-user-navigation a:hover,
+.transparency-user-navigation a:focus {
+    color: rgba(255, 255, 255, 1);
+} 
+
+.transparency-user-navigation a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+.transparency-user-navigation .link-exit,
+.transparency-user-navigation .link-exit:hover,
+.transparency-user-navigation .link-exit:focus {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.transparency-user-navigation .user-name {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .transparency-social a {
@@ -263,23 +307,6 @@ ul {
     opacity: 0.1;
 }
 
-.transparency-user-navigation a {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.transparency-user-navigation a:hover,
-.transparency-user-navigation a:focus {
-    color: rgba(255, 255, 255, 1);
-} 
-
-.transparency-user-navigation a:active {
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.transparency-user-navigation .user-name {
-    color: rgba(255, 255, 255, 0.7);
-}
-
 .transparency-footer a:hover,
 .transparency-footer a:focus {
     color: rgba(255, 255,255, 0.6) ;
@@ -287,8 +314,4 @@ ul {
 
 .transparency-footer a:active {
     color: rgba(255, 255, 255, 0.3) ;
-}
-
-.transparency-user-navigation .exit a {
-    color: rgba(255, 255, 255, 0.3);
 }
