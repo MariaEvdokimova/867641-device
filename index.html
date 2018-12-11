@@ -9,71 +9,73 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="header-top">
-                <a class="main-header-logo transparency-logo">
-                    <img src="img/index-logo.svg" width="164" height="36" alt="Логотип Device">
-                </a>
+            <div class="header-wrapper container">
+                <div class="header-top">
+                    <a class="main-header-logo transparency-logo">
+                        <img src="img/index-logo.svg" width="164" height="36" alt="Логотип Device">
+                    </a>
+                </div>
+                <div class="header-user">
+                    <form class="search" action="#" method="get">
+                        <label for="id-search" class="visually-hidden">Поиск по сайту</label>
+                        <input class="site-search" type="text" name="search" id="id-search" placeholder="Поиск по сайту">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
+                        </svg>
+                    </form>
+                    <ul class="user-navigation transparency-header">
+                        <li class="login-link">
+                            <a href="#">Войти</a>
+                        </li>
+                        <li class="user-compare">
+                            <a href="#">Сравнить</a>
+                        </li>
+                        <li class="user-cart">
+                            <a href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header-navigation transparency-header">
+                    <ul class="catalog-navigation">
+                        <li>
+                            <a class="list-product-type" href="catalog.html">Каталог товаров</a>
+                           <!-- <ul>
+                                <li>
+                                    <a class="product-type" href="#">Виртуальная реальность</a>
+                                </li>
+                                <li>
+                                    <a class="product-type" href="#">Моноподы для селфи</a>
+                                </li>
+                                <li>
+                                    <a class="product-type" href="#">Экшн-камеры</a>
+                                </li>
+                                <li>
+                                    <a class="product-type" href="#">Фитнес-браслеты</a>
+                                </li>
+                                <li>
+                                    <a class="product-type" href="#">Умные часы</a>
+                                </li>
+                                <li>
+                                    <a class="product-type" href="#">Квадрокоптеры</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                    <ul class="site-navigation">
+                        <li>
+                            <a href="delivery.html">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="guarantee.html">Гарантия</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="header-user">
-                <form class="search" action="#" method="get">
-                    <label for="id-search" class="visually-hidden">Поиск по сайту</label>
-                    <input class="site-search" type="text" name="search" id="id-search" placeholder="Поиск по сайту">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
-                    </svg>
-                </form>
-                <ul class="user-navigation transparency-header">
-                    <li class="login-link">
-                        <a href="#">Войти</a>
-                    </li>
-                    <li class="user-compare">
-                        <a href="#">Сравнить</a>
-                    </li>
-                    <li class="user-cart">
-                        <a href="#">Корзина</a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="header-navigation transparency-header">
-                <ul class="catalog-navigation">
-                    <li>
-                        <a class="list-product-type" href="catalog.html">Каталог товаров</a>
-                        <ul>
-                            <li>
-                                <a class="product-type" href="#">Виртуальная реальность</a>
-                            </li>
-                            <li>
-                                <a class="product-type" href="#">Моноподы для селфи</a>
-                            </li>
-                            <li>
-                                <a class="product-type" href="#">Экшн-камеры</a>
-                            </li>
-                            <li>
-                                <a class="product-type" href="#">Фитнес-браслеты</a>
-                            </li>
-                            <li>
-                                <a class="product-type" href="#">Умные часы</a>
-                            </li>
-                            <li>
-                                <a class="product-type" href="#">Квадрокоптеры</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="site-navigation">
-                    <li>
-                        <a href="delivery.html">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="guarantee.html">Гарантия</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
-        <main>
+        <main class="container">
             <h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
             <section class="company-info">
                 <div class="about-us">
@@ -102,53 +104,55 @@
             </section>
         </main>
         <footer class="main-footer">
-            <div class="footer-top">
-                <a class="main-footer-logo transparency-logo" href="#">
-                    <img src="img/footer-logo.svg" width="164" height="36" alt="Логотип Device">
-                </a>
-                <ul class="user-navigation transparency-user-navigation">
-                    <li class="login-link">
-                        <a href="#">Войти</a>
-                    </li>
-                    <li class="user-compare">
-                        <a href="#">Сравнить</a>
-                    </li>
-                    <li class="user-cart">
-                        <a href="#">Корзина</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="footer-top">
+                    <a class="main-footer-logo transparency-logo" href="#">
+                        <img src="img/footer-logo.svg" width="164" height="36" alt="Логотип Device">
+                    </a>
+                    <ul class="user-navigation transparency-user-navigation">
+                        <li class="login-link">
+                            <a href="#">Войти</a>
+                        </li>
+                        <li class="user-compare">
+                            <a href="#">Сравнить</a>
+                        </li>
+                        <li class="user-cart">
+                            <a href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle">
+                    <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+                    <ul class="site-navigation transparency-footer">
+                        <li>
+                            <a href="delivery.html">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="guarantee.html">Гарантия</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
+                </div>
+                <div class="footer-bottom">
+                    <ul class="transparency-social">
+                        <li>
+                            <a class="social-button" href="#">Фейсбук</a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="#">Инстаграм</a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="#">Твиттер</a>
+                        </li>
+                    </ul>
+                    <a class="button-logo transparency-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img src="img/logo-html.svg" width="27" height="35" alt="интенсив «Профессиональный HTML и CSS, уровень 1»">
+                    </a>
+                </div>
             </div>
-            <div class="footer-middle">
-                <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-                <ul class="site-navigation transparency-footer">
-                    <li>
-                        <a href="delivery.html">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="guarantee.html">Гарантия</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-                <p class="phone-number">Тел.: +7 (495) 495-95-95</p>
-            </div>
-            <div class="footer-button">
-                <ul class="transparency-social">
-                    <li>
-                        <a class="social-button" href="#">Фейсбук</a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#">Инстаграм</a>
-                    </li>
-                    <li>
-                        <a class="social-button" href="#">Твиттер</a>
-                    </li>
-                </ul>
-                <a class="button-logo transparency-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="img/logo-html.svg" width="27" height="35" alt="интенсив «Профессиональный HTML и CSS, уровень 1»">
-                </a>
-            </div>	
         </footer>
         
         <section class="modal modal-write-us">
