@@ -42,10 +42,10 @@
                 </div>
                 <nav class="header-navigation transparency-header">
                     <ul class="catalog-navigation">
-                        <li>
-                            <a class="list-product-type" href="catalog.html">Каталог товаров</a>
+                        <li class="list-product-type">
+                            <a href="catalog.html">Каталог товаров</a>
                             <button class="product-type-button" type="button">Раскрыть список каталога товаров</button>
-                           <!-- <ul class="product-type">
+                            <ul class="product-type">
                                 <li>
                                     <a href="#">Виртуальная реальность</a>
                                 </li>
@@ -64,7 +64,7 @@
                                 <li>
                                     <a href="#">Квадрокоптеры</a>
                                 </li>
-                            </ul> -->
+                            </ul> 
                         </li>
                     </ul>
                     <ul class="site-navigation">
@@ -118,12 +118,12 @@
                             <legend class="visually-hidden">Порядок сортировки</legend>
                             <ul class="sort-order">
                                 <li>
-                                    <input class="sort-in" type="radio" id="sort-increase" name="sort" checked>
-                                    <label class="visually-hidden" for="sort-increase">От меньшего к большему</label>
+                                    <input class="visually-hidden sort-in" type="radio" id="sort-increase" name="sort">
+                                    <label for="sort-increase"></label>
                                 </li>
                                 <li>
-                                    <input class="" type="radio" id="sort-decrease" name="sort">
-                                    <label class="sort-dec visually-hidden" for="sort-decrease">От большего к меньшему</label>
+                                    <input class="visually-hidden sort-dec" type="radio" id="sort-decrease" name="sort" checked>
+                                    <label for="sort-decrease"></label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -132,13 +132,22 @@
             </section>
             <section class="catalog-columns">
                 <div class="filter-wrapper">
-                    <form class="filter">
-                        <fieldset>
+                    <form class="filter" method="get" action="#">
+                        <fieldset class="filter-item">
                             <legend>Стоимость</legend>
-                            <label class="visually-hidden" for="price">Диапазон от 0 до 5000</label>
-                            <span class="price-min">от 0</span>
-                            <input class="price-range" type="range" id="price" min="0" max="5000" step="1">
-                            <span class="price-max"> до 5000</span>
+                            <div class="range-filter">
+                              <div class="range-controls">
+                                <div class="scale">
+                                  <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                              </div>
+                              <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                              </div>
+                            </div>
                         </fieldset>
                         <fieldset class="filter-color">
                             <legend>Цвет</legend>
@@ -201,7 +210,11 @@
                         <ul class="list-items">
                             <li class="item">
                                 <p>
-                                    <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                                    <a class="item-img" href="#">
+                                        <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
+                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
+                                    </a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Любительская селфи-палка</a>
@@ -210,7 +223,11 @@
                             </li>
                             <li class="item">
                                 <p>
-                                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                                    <a class="item-img" href="#">
+                                        <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
+                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
+                                    </a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Профессиональная селфи&nbsp;-&nbsp;палка</a>
@@ -219,7 +236,11 @@
                             </li>
                             <li class="item">
                                 <p>
-                                    <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                                    <a class="item-img" href="#">
+                                        <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
+                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
+                                    </a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Непотопляемая селфи-палка</a>
@@ -228,7 +249,11 @@
                             </li>
                             <li class="item">
                                 <p>
-                                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                                    <a class="item-img" href="#">
+                                        <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
+                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
+                                    </a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
@@ -238,13 +263,13 @@
                         </ul>
                     </div>
                     <div class="pagination">
-                        <span>назад</span>
+                        <a class="pagination-button" href="#">назад</a>
                         <ul class="pagination-list">
                           <li class="pagination-item pagination-item-current"><a>1</a></li>
                           <li class="pagination-item"><a href="#">2</a></li>
                           <li class="pagination-item"><a href="#">3</a></li>
                         </ul>
-                        <span>вперед</span>
+                        <a class="pagination-button" href="#">вперед</a>
                     </div>
                 </div>
             </section>
