@@ -1843,8 +1843,8 @@ input[type="radio"].visually-hidden {
 
 .footer-top .user-link-svg {
     position: relative;
-    top: 9px;
-    left: -14px;
+    top: 0px;
+    left: -11px;
 }
 
 .footer-top .user-compare {
