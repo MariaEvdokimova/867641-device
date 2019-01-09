@@ -19,6 +19,7 @@
                     <form class="search" action="#" method="get">
                         <label for="id-search" class="visually-hidden">Поиск по сайту</label>
                         <input class="site-search" type="text" name="search" id="id-search" placeholder="Поиск по сайту">
+                        <button class="button-search" type="submit">Найти</button>
                     </form>
                     <ul class="user-navigation transparency-header">
                         <li class="login-link">
@@ -45,26 +46,32 @@
                         <li class="list-product-type">
                             <a href="catalog.html">Каталог товаров</a>
                             <button class="product-type-button" type="button">Раскрыть список каталога товаров</button>
-                            <ul class="product-type">
-                                <li>
-                                    <a href="#">Виртуальная реальность</a>
-                                </li>
-                                <li>
-                                    <a href="#">Моноподы для селфи</a>
-                                </li>
-                                <li>
-                                    <a href="#">Экшн-камеры</a>
-                                </li>
-                                <li>
-                                    <a href="#">Фитнес-браслеты</a>
-                                </li>
-                                <li>
-                                    <a href="#">Умные часы</a>
-                                </li>
-                                <li>
-                                    <a href="#">Квадрокоптеры</a>
-                                </li>
-                            </ul> 
+                            <div class="product-type">
+                                <ul>
+                                    <li>
+                                        <a href="#">Виртуальная реальность</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Моноподы для селфи</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Экшн-камеры</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Фитнес-браслеты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Умные часы</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Квадрокоптеры</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                     <ul class="site-navigation">
@@ -106,11 +113,11 @@
                         <li>
                             <a class="sort-type-current" href="#" >По цене</a>
                         </li>
+                        <li>
                             <a href="#">По типу</a>
-                        <li>
                         </li>
-                            <a href="#">По популярности</a>
                         <li>
+                            <a href="#">По популярности</a>
                         </li>
                     </ul>
                     <form class="sort-form">
@@ -209,12 +216,12 @@
                     <div>
                         <ul class="list-items">
                             <li class="item">
-                                <p>
-                                    <a class="item-img" href="#">
-                                        <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
-                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
-                                    </a>
+                                <p class="item-img">
+                                    <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                                </p>
+                                <p class="item-links">
+                                    <a href="#" class="button item-img-hover item-img-cart">В корзину</a>
+                                    <a href="#" class="item-img-hover item-img-compare">Добавить к сравнению</a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Любительская селфи-палка</a>
@@ -222,12 +229,12 @@
                                 </p>
                             </li>
                             <li class="item">
-                                <p>
-                                    <a class="item-img" href="#">
-                                        <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
-                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
-                                    </a>
+                                <p class="item-img">
+                                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                                </p>
+                                <p class="item-links">
+                                    <a href="#" class="button item-img-hover item-img-cart">В корзину</a>
+                                    <a href="#" class="item-img-hover item-img-compare">Добавить к сравнению</a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Профессиональная селфи&nbsp;-&nbsp;палка</a>
@@ -235,25 +242,25 @@
                                 </p>
                             </li>
                             <li class="item">
-                                <p>
-                                    <a class="item-img" href="#">
-                                        <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
-                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
-                                    </a>
+                                <p class="item-img">
+                                    <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                                </p>
+                                <p class="item-links">
+                                    <a href="#" class="button item-img-hover item-img-cart">В корзину</a>
+                                    <a href="#" class="item-img-hover item-img-compare">Добавить к сравнению</a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Непотопляемая селфи-палка</a>
                                     <span>2 500 руб.</span>
                                 </p>
                             </li>
-                            <li class="item">
-                                <p>
-                                    <a class="item-img" href="#">
-                                        <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                                        <button class="button item-img-hover item-img-cart" type="submit">В корзину</button>
-                                        <button class="item-img-hover item-img-compare" type="submit">Добавить к сравнению</button>
-                                    </a>
+                            <li class="item item-new">
+                                <p class="item-img">
+                                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                                </p>
+                                <p class="item-links">
+                                    <a href="#" class="button item-img-hover item-img-cart">В корзину</a>
+                                    <a href="#" class="item-img-hover item-img-compare">Добавить к сравнению</a>
                                 </p>
                                 <p class="item-title">
                                     <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
