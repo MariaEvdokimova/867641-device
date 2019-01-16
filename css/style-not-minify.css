@@ -255,7 +255,7 @@ input[type="radio"].visually-hidden {
 .search:hover .button-search,
 .site-search:focus + .button-search {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: bottom;
     
     margin: 0;
     margin-left: -5px;
@@ -615,7 +615,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
     width: 10px;
     height: 10px;
     
@@ -1594,7 +1594,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: bottom;
     width: 45%;
     
     font-size: 14px;
